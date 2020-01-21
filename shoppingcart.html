@@ -1,0 +1,113 @@
+<doctype! html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Shopping Cart</title>
+		 <link href= "/home/sese/Launchlab Bootcamp/shoppingcartstyle.css" "text/css"
+			 rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class = page>
+    <h1><em>HICKIES Originals</em></h1>
+    <hr />
+    <p><img src = "https://miro.medium.com/max/553/1*PvoG2ZWSd5Z-a3k2jdM55A.png"
+      class="image" alt="Magnolia"/> <br>
+      2587 orders, 1255 reviews</p>
+     <p>Was <s>$30.99</s> Now only <br></p>
+     <h2><p id ="demo"><b>$25.89</b></p></h2>
+
+
+    <br>
+    <p><b>Online Exclusive, while stock lasts!</b></p>
+    <p><strong>Color:</strong> </p>
+
+
+    <button class = "button button1" onclick="myFunctionG()">Green</button>
+    <button class = "button button2" onclick="myFunctionR()">Red</button>
+    <button class = "button button3" onclick="myFunctionB()">Black</button>
+    <button class = "button button4" onclick="myFunctionP()">Gold</button>
+    <button class = "button button5" onclick="myFunctionBl()">Blue</button>
+
+    <script>
+  function myFunctionG() {
+  document.getElementById("demo").style.color = "Green";}
+
+  function myFunctionR() {
+  document.getElementById("demo").style.color = "Red";}
+
+  function myFunctionB() {
+  document.getElementById("demo").style.color = "Black";}
+
+  function myFunctionP() {
+  document.getElementById("demo").style.color = "Gold";}
+
+  function myFunctionBl() {
+  document.getElementById("demo").style.color = "Blue";}
+
+
+
+</script>
+
+    <br><br>
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cartModal">ADD TO CART</button>
+
+  <div class="modal fade" id="cartModal" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Item quantity</h4>
+        </div>
+        <div class="modal-body">
+          <p>Please add the quantity of the item you have selected:</p>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-info">Agree</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<hr />
+
+<button>DETAILS</button>
+
+<hr />
+<a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#helpModal">Need Help?</a>
+
+<div class="modal fade" id="helpModal" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Help</h4>
+      </div>
+      <div class="modal-body">
+        <p>This information </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<a type = "button">Shipping and Returns</a>
+
+
+    </div>
+
+  </body>
+
+</html>>
